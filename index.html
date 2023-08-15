@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Sun and Moon Animation</title>
+    <style id="globalStyle">
+      * {
+        margin: 0;
+        color: #fff;
+        padding: 0;
+        box-sizing: border-box;
+        /* color: #313030; */
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body>
     <div class="stars" id="stars">
@@ -50,80 +60,85 @@
     <div class="mountain3"></div>
     <div class="home-container">
       <div class="left-info">
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search"
+            placeholder="search a city"
+            value="bareilly"
+          />
+          <button id="search-btn">Search</button>
+        </div>
         <div id="country">Graphic Era hill university</div>
         <div class="date-time">20-04-2002|| 2002</div>
-        <div class="temperature">
-          <img src="moon.png" height="50" width="50" />20 C
+        <div id="temperature">
+          <img id="temp-img" src="moon.png" height="50" width="50" />20 C
         </div>
         <div class="more-info">
-          <div class="info-2">Real feel: 20 C</div>
+          <div id="info-2">Real feel: 20 C</div>
         </div>
         <div class="sun-set-rise">
-          <div class="sun-rise">Sunrise: 6 Am</div>
-          <div class="sun-set">Sunset: 7 Pm</div>
+          <div id="sun-rise">Sunrise: 6 Am</div>
+          <div id="sun-set">Sunset: 7 Pm</div>
         </div>
       </div>
     </div>
 
-    <div class="main-div">
-      <div class="week-cont">
-        <div class="day">
-          <h2>Monday</h2>
-          <img src="sun.png" height="50" width="50" />
-          <div class="day-temp">20 C</div>
-          <div class="temp-more-info">
-            <div class="min-temp">17 C</div>
-            <div class="max-temp">24 C</div>
+    <div class="main-div2">
+      <div class="div1">
+        <div id="lat-lon">
+          <h1>Coordinates</h1>
+          <div class="inner-div">
+            <div id="lat">Lattitude: 28.35</div>
+
+            <div id="long">longitude: 79.4167</div>
           </div>
         </div>
-        <div class="day">
-          <h2>Monday</h2>
-          <img src="sun.png" height="50" width="50" />
-          <div class="day-temp">20 C</div>
-          <div class="temp-more-info">
-            <div class="min-temp">17 C</div>
-            <div class="max-temp">24 C</div>
-          </div>
-        </div>
-        <div class="day">
-          <h2>Monday</h2>
-          <img src="sun.png" height="50" width="50" />
-          <div class="day-temp">20 C</div>
-          <div class="temp-more-info">
-            <div class="min-temp">17 C</div>
-            <div class="max-temp">24 C</div>
-          </div>
-        </div>
-        <div class="day">
-          <h2>Monday</h2>
-          <img src="sun.png" height="50" width="50" />
-          <div class="day-temp">20 C</div>
-          <div class="temp-more-info">
-            <div class="min-temp">17 C</div>
-            <div class="max-temp">24 C</div>
-          </div>
-        </div>
-        <div class="day">
-          <h2>Monday</h2>
-          <img src="sun.png" height="50" width="50" />
-          <div class="day-temp">20 C</div>
-          <div class="temp-more-info">
-            <div class="min-temp">17 C</div>
-            <div class="max-temp">24 C</div>
-          </div>
-        </div>
-        <div class="day">
-          <h2>Monday</h2>
-          <img src="sun.png" height="50" width="50" />
-          <div class="day-temp">20 C</div>
-          <div class="temp-more-info">
-            <div class="min-temp">17 C</div>
-            <div class="max-temp">24 C</div>
+        <div id="wind">
+          <h1>wind</h1>
+          <div class="inner-div2">
+            <div id="wind-speed">Wind Speed: backchodi</div>
+            <div id="wind-degree">Wind degree:</div>
           </div>
         </div>
       </div>
+      <div class="div2">
+        <div class="mainDiv3">
+          <div class="description">
+            <h1>Description</h1>
+            <div id="des-status">Cloudy</div>
+          </div>
+          <div class="min-max">
+            <div id="min">Min-temp: 33.79</div>
+            <div id="max">Max-temp: 33.79</div>
+          </div>
+        </div>
+      </div>
+      <div class="div3">
+        <div class="humidity">
+          <div class="humidity-heading">Humidity</div>
+          <div id="humidity-info">20%</div>
+        </div>
+        <div class="visibility">
+          <div class="visibility-heading">Visibility</div>
+          <div id="visibility-info">29</div>
+        </div>
+        <div class="pressure">
+          <div class="pressure-heading">Pressure</div>
+          <div id="pressure-info">50</div>
+        </div>
+        <div class="ground">
+          <div class="ground-heading">Ground-level</div>
+          <div id="ground-info">29</div>
+        </div>
+        <div class="sea">
+          <div class="sea-heading">Sea-level</div>
+          <div id="sea-info">20%</div>
+        </div>
+      </div>
+    </div>
 
-      <div class="compass-div">{%AddCompas%}</div>
+    <!-- <div class="compass-div">{%AddCompas%}</div>
       <div class="other-info">
         <div class="rain">
           <div class="rain-heading">Rain</div>
@@ -146,7 +161,7 @@
           <div class="humidity-info">20%</div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <p></p>
 
